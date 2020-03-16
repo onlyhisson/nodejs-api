@@ -55,12 +55,13 @@ router.post('/token', apiLimiter, async (req, res) => {
         message: '등록되지 않은 도메인입니다. 먼저 도메인을 등록하세요',
       });
     }
+
     const token = jwt.sign({
       id: domain.user.id,
       nick: domain.user.nick,
     }, process.env.JWT_SECRET, {
       expiresIn: '30m', // 30분
-      issuer: 'nodebird',
+      issuer: 'nodejsapi',
     });
     return res.json({
       code: 200,
