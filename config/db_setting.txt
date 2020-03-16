@@ -1,0 +1,11 @@
+-- ##########################################
+-- nodejs api
+-- ##########################################
+
+-- database 생성
+CREATE DATABASE nodejsapi default CHARACTER SET UTF8;
+
+-- user 생성
+CREATE USER 'nodejsapi'@'localhost' IDENTIFIED BY 'nodejs3060api';
+GRANT ALL PRIVILEGES ON nodejsapi.* TO 'nodejsapi'@'localhost';
+FLUSH PRIVILEGES;

@@ -1,0 +1,25 @@
+{
+    "development": {
+      "username": "nodejsapi",
+      "password": "nodejs3060api",
+      "database": "nodejsapi",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "operatorsAliases": false
+    },
+    "test": {
+      "username": "nodejsapi",
+      "password": "nodejs3060api",
+      "database": "nodejsapi",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "nodejsapi",
+      "password": "nodejs3060api",
+      "database": "nodejsapi",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    }
+  }
+  
